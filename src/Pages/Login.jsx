@@ -6,7 +6,7 @@ import { useNavigate } from "react-router-dom";
 
 function Login() {
     const navigate = useNavigate();
-    const clientId = '449313310500-bpambnvbicerdqltq67i5ostkun77420.apps.googleusercontent.com';
+    const clientId = 'your google ClientId here ';
     useEffect(() => {
         const initClient = () => {
             gapi.client.init({
