@@ -2,10 +2,10 @@ import React, { useEffect } from 'react';
 import { GoogleLogin } from 'react-google-login';
 import { gapi } from 'gapi-script';
 
-// import { useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
 function Login() {
-    // const navigate = useNavigate();
+    const navigate = useNavigate();
     const clientId = '449313310500-bpambnvbicerdqltq67i5ostkun77420.apps.googleusercontent.com';
     useEffect(() => {
         const initClient = () => {
@@ -19,7 +19,7 @@ function Login() {
 
     const onSuccess = (res) => {
         console.log('success', res);
-        // navigate("/redirect");
+        navigate("/redirect");
     };
 
     const onFailure = (err) => {
